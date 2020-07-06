@@ -13,8 +13,9 @@ z = "I like turtles!"
 # x is 10, y is 2.25, z is "I like turtles!"
 print("x is %a, y is %f, z is %s" % (x, y, z))
 
+digits = 2
 # Use the 'format' string method to print the same thing
-print("x is {:d}, y is {:f}, z is {:s}".format(x,y,z))
+print("x is {x:d}, y is {y:.{digits}f}, z is {z:s}".format(x=x,y=y,z=z,digits=digits))
 
 # Finally, print the same thing using an f-string
-print(f"x is {x}, y is {y}, z is {z}")
+print(f"x is {x}, y is {y:.2f}, z is {z}")
